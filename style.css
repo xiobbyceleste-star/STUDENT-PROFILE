@@ -1,0 +1,127 @@
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page design */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fcecf2;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Business card */
+.business-card {
+    width: 380px;
+    min-height: 230px;
+    background: linear-gradient(135deg, #fffafd, #f5e6ff);
+    border-radius: 25px;
+    padding: 35px;
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0 15px 35px rgba(160, 100, 160, 0.18);
+    border: 2px solid white;
+}
+
+/* Card content */
+.card-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Small greeting */
+.greeting {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #bd82aa;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Main heading */
+h1 {
+    font-size: 38px;
+    color: #76517f;
+    margin-bottom: 12px;
+}
+
+/* Description */
+.description {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #927a9a;
+    max-width: 260px;
+}
+
+/* Divider */
+.divider {
+    width: 45px;
+    height: 3px;
+    background: #e9a8c8;
+    border-radius: 10px;
+    margin: 20px 0 12px;
+}
+
+/* Footer */
+.footer {
+    font-size: 10px;
+    color: #b18eae;
+}
+
+/* Decorations */
+.decoration {
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    font-size: 55px;
+    color: #eab8d5;
+    opacity: 0.7;
+}
+
+.flower {
+    position: absolute;
+    color: #d9a6e5;
+}
+
+.flower-one {
+    bottom: 10px;
+    right: 25px;
+    font-size: 65px;
+    opacity: 0.5;
+}
+
+.flower-two {
+    top: 90px;
+    right: 35px;
+    font-size: 25px;
+    color: #e9a8c8;
+}
+
+/* Hover animation */
+.business-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.business-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 22px 40px rgba(160, 100, 160, 0.25);
+}
+
+/* Responsive design */
+@media (max-width: 450px) {
+    .business-card {
+        width: 90%;
+        padding: 28px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
